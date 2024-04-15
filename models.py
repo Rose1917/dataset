@@ -281,7 +281,7 @@ class ModelForAE():
                 K_shots_input_and_labels[str(K)][_type] = cur_dataset
         self.dataset = K_shots_input_and_labels
         date_str = datetime.now()
-        dump2json(K_shots_input_and_labels, f"ae_100k_post_process_{date_str}.json".replace(' ', '_'))
+        # dump2json(K_shots_input_and_labels, f"ae_100k_post_process_{date_str}.json".replace(' ', '_'))
         info("dumped processed dataset to file: " + f"ae_100k_post_process_{date_str}.json".replace(' ', '_'))
         '''
         K:
